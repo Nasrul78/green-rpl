@@ -4,7 +4,7 @@ import type { ITanaman } from "@/types";
 const TANAMAN: ITanaman[] = [
   {
     id: 0,
-    thumbnail: "nusa-indah0.jpeg",
+    thumbnail: "photos/nusa-indah0.jpeg",
     title: "Bunga Nusa Indah",
     titleLatin: "Mussaenda philippica",
     description:
@@ -62,7 +62,7 @@ const TANAMAN: ITanaman[] = [
   },
   {
     id: 1,
-    thumbnail: "bulu-ayam0.jpeg",
+    thumbnail: "photos/bulu-ayam0.jpeg",
     title: "Bunga Bulu Ayam",
     titleLatin: "Chlorophytum comosum",
     description:
@@ -120,7 +120,7 @@ const TANAMAN: ITanaman[] = [
   },
   {
     id: 2,
-    thumbnail: "krokot0.jpeg",
+    thumbnail: "photos/krokot0.jpeg",
     title: "Bunga Krokot",
     titleLatin: "Portulaca oleracea",
     description:
@@ -178,7 +178,7 @@ const TANAMAN: ITanaman[] = [
   },
   {
     id: 3,
-    thumbnail: "taiwan0.jpeg",
+    thumbnail: "photos/taiwan0.jpeg",
     title: "Bunga Taiwan",
     titleLatin: "Cuphea hyssopifolia",
     description:
