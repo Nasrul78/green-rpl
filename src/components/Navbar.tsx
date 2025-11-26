@@ -23,7 +23,9 @@ const Navbar = () => {
             <Menu />
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-52 bg-navbar" align="center">
-            <DropdownMenuLabel className="text-lg font-semibold">Taman X - RPL</DropdownMenuLabel>
+            <DropdownMenuLabel className="text-lg font-semibold">
+              <Link to="/">Taman X - RPL</Link>
+            </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem className="hover:bg-paragraph/20!">
               <NavLink className="text-md my-1 w-full" to="/tanaman">Tanaman</NavLink>
