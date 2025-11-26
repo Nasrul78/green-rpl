@@ -17,7 +17,7 @@ const TanamanCard = ({id, thumbnail, title, description, siram}: ITanaman) => {
         <div className="mt-3 flex justify-between items-center text-accent">
             <span className="gap-1 justify-between items-center flex bg-accent-primary-slight-blur sm:hidden px-3 py-1 rounded-full"><Droplet className="size-5.5"/>{trimmedSiram}</span>
             <span className="gap-1 justify-between items-center sm:flex bg-accent-primary-slight-blur hidden px-3 py-1 rounded-full"><Droplet className="size-5.5"/>{siram}</span>
-            <a className={`flex items-center gap-1" href="/tanaman/${id}`}>Selengkapnya<ArrowRight /></a>
+            <a className={`flex items-center gap-2" href="/tanaman/${id}`}>Selengkapnya<ArrowRight className="size-4.5"/></a>
         </div>
       </div>
     </article>
