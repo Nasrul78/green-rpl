@@ -1,17 +1,17 @@
 import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import clsx from "clsx"
+// import { Label } from "@/components/ui/label"
+// import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+// import clsx from "clsx"
 import { useState } from "react"
 
 const images = import.meta.glob("/public/photos/*.{jpg,png,jpeg}", { eager: true })
 const imageList = Object.values(images).map((mod: any) => mod.default)
 
-const videos = import.meta.glob("/public/videos/*.{}", { eager: true })
-const videoList = Object.values(videos).map((mod: any) => mod.default)
+// const videos = import.meta.glob("/public/videos/*.{}", { eager: true })
+// const videoList = Object.values(videos).map((mod: any) => mod.default)
 
 const Galeri = () => {
-  const [activeChild, setActiveChild] = useState<number>(0)
+  // const [activeChild, setActiveChild] = useState<number>(0)
   const [loadedPhotos, setLoadedPhotos] = useState<number>(6)
 
   return (
