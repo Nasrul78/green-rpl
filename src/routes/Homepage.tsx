@@ -12,8 +12,8 @@ const Homepage = () => {
   return (
     <main>
       <section className="bg-hero p-12 flex flex-col items-center">
-        <img className="size-24" src="logo-kelas.png" alt="Logo Kelas" />
-        <h1 className="text-center m-12 font-bold text-7xl text-title">Eksplori Dunia Tanaman </h1>
+        <img className="size-36" src="logo-kelas.png" alt="Logo Kelas" />
+        <h1 className="text-center m-8 font-bold text-6xl text-title">Eksplori Dunia Tanaman </h1>
         <p className="text-center">Temukan informasi lengkap tentang tanaman, panduan perawatan, dan fakta menarik dari tanaman pada taman kami</p>
 
         <nav className="p-8 flex flex-col gap-4 w-9/8">
@@ -27,8 +27,8 @@ const Homepage = () => {
       </section>
 
       <section className="p-12 text-center">
-        <h1 className="text-4xl font-bold text-title">Project Overview</h1>
-        <p className="text-md mt-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quos, ab cupiditate animi consequuntur ex laboriosam, autem dolorum voluptatibus sit saepe assumenda? Nam, asperiores aliquid!</p>
+        <h1 className="text-4xl font-bold text-title">Gambaran Proyek</h1>
+        <p className="text-md mt-6">Proyek ini menampilkan koleksi tanaman outdoor pada taman kami yang disusun secara kurasi, lengkap dengan informasi detail dan fakta menarik tentang tanaman agar pengunjung mengetahui lebih banyak tentang tanaman yang ada di taman kami.</p>
       </section>
 
       <section className="p-12 flex flex-col gap-6  w-full">
@@ -52,7 +52,7 @@ const Homepage = () => {
           ))}
         </div>
 
-        <Link className="gap-2 flex items-center bg-accent h-16 mt-8 justify-center rounded-lg text-white font-semibold text-lg" to="/tanaman">
+        <Link className="gap-2 flex items-center bg-white border-2 border-accent-primary h-16 mt-8 justify-center rounded-lg text-accent-primary font-semibold text-lg" to="/tanaman">
           Lihat Semua Tanaman Kami
         </Link>
       </section>

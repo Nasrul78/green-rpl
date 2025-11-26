@@ -12,8 +12,9 @@ import { NavLink } from "react-router-dom"
 const Navbar = () => {
   return (
     <header className="p-2 sticky flex top-0 justify-between items-center bg-navbar border-2 border-border">
-      <div>
+      <div className="flex items-center gap-2">
         <img src="logo-kelas.png" alt="Logo Kelas" className="size-12" />
+        <h1 className="text-title font-bold text-xl">Taman X - RPL</h1>
       </div>
 
       <nav>
@@ -22,7 +23,7 @@ const Navbar = () => {
             <Menu />
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-56 bg-navbar" align="center">
-            <DropdownMenuLabel>Taman X - RPL</DropdownMenuLabel>
+            <DropdownMenuLabel className="font-semibold">Taman X - RPL</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem className="hover:bg-paragraph/20!">
               <NavLink to="/tanaman">Tanaman</NavLink>
