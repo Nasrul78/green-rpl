@@ -1,71 +1,59 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 @theme inline {
-  --color-background: var(--background);
-  --color-navbar: var(--navbar);
-  --color-feature-card: var(--feature-card);
-  --color-feature-card-border: var(--accent-primary);
-  --color-card: var(--card);
-  --color-border: var(--border);
-  --color-accent-primary: var(--accent-primary);
-  --color-accent-primary-slight-blur: var(--accent-primary-slight-blur);
-  --color-accent-primary-blur: var(--accent-primary-blur);
-  --color-accent-secondary: var(--accent-secondary);
-  --color-accent-secondary-blur: var(--accent-secondary-blur);
-  --color-accent-secondary-border: var(--accent-secondary-border);
-  --color-accent-tertiary: var(--accent-tertiary);
-  --color-accent-tertiary-blur: var(--accent-tertiary-blur);
-  --color-accent-tertiary-border: var(--accent-tertiary-border);
-  --color-hero: var(--hero);
-  --color-section-odd: var(--section-odd);
-  --color-button-primary: var(--button-primary);
-  --color-button-secondary: var(--button-secondary);
-  --color-title: var(--title);
-  --color-paragraph: var(--paragraph);
-  --color-copyright: var(--copyright);
-  --color-footer: var(--footer);
-  --color-footer-title: var(--footer-title);
-  --color-footer-paragraph: var(--footer-paragraph);
-}
+  --color-background: oklch(98.444% 0.00463 258.639);
+  --color-navbar: oklch(0.997 0.003 250);
+  --color-feature-card: oklch(98.193% 0.01802 156.147);
+  --color-card: oklch(100% 0.00011 271.152);
+  --color-border: oklch(0.93 0.01 250);  
 
-:root {
-  --background: oklch(98.444% 0.00463 258.639);
-  --navbar: oklch(0.997 0.003 250);
-  --feature-card: oklch(98.193% 0.01802 156.147);
-  --card: oklch(100% 0.00011 271.152);
-  --border: oklch(0.93 0.01 250);  
+  --color-accent-primary: oklch(0.72 0.17 150);
+  --color-accent-primary-slight-blur:oklch(96.242% 0.04334 156.874);
+  --color-accent-primary-blur: oklch(98.193% 0.01802 156.147);
+  --color-accent-primary-border: oklch(96.242% 0.04334 156.874);
+  --color-accent-secondary: oklch(62.31% 0.1881 259.83);
+  --color-accent-secondary-blur: oklch(97.048% 0.01429 254.737);
+  --color-accent-secondary-border: oklch(93.192% 0.0317 255.644);
+  --color-accent-tertiary: oklch(76.858% 0.1646 70.075);
+  --color-accent-tertiary-blur: oklch(98.688% 0.02129 95.306);
+  --color-accent-tertiary-border: oklch(96.19% 0.05793 95.632);
 
-  --accent-primary: oklch(0.72 0.17 150);
-  --accent-primary-slight-blur:oklch(96.242% 0.04334 156.874);
-  --accent-primary-blur: oklch(98.193% 0.01802 156.147);
-  --accent-primary-border: oklch(96.242% 0.04334 156.874);
-  --accent-secondary: oklch(62.31% 0.1881 259.83);
-  --accent-secondary-blur: oklch(97.048% 0.01429 254.737);
-  --accent-secondary-border: oklch(93.192% 0.0317 255.644);
-  --accent-tertiary: oklch(76.858% 0.1646 70.075);
-  --accent-tertiary-blur: oklch(98.688% 0.02129 95.306);
-  --accent-tertiary-border: oklch(96.19% 0.05793 95.632);
+  --color-care-water: oklch(54.616% 0.21529 262.896);
+  --color-care-water-blur: oklch(54.616% 0.21529 262.896 / 20%);
+  --color-care-sunlight: oklch(68.063% 0.14223 75.832);
+  --color-care-sunlight-blur: oklch(68.063% 0.14223 75.832 / 20%);
+  --color-care-soil: oklch(47.077% 0.11211 50.832);
+  --color-care-soil-blur: oklch(47.077% 0.11211 50.832 / 20%);
 
-  --hero: oklch(98.193% 0.01802 156.147);
-  --section-odd: oklch(98.463% 0.00181 249.248);
+  --color-stats-description: oklch(70.633% 0.13743 127.657);
 
-  --button-primary: oklch(0.72 0.17 150);
-  --button-secondary: oklch(0.67 0.16 260);
+  --color-hero: oklch(98.193% 0.01802 156.147);
+  --color-section-odd: oklch(0.8765 0.0706 169.72 / 20%);
 
-  --title: oklch(0.23 0.04 260);
-  --paragraph: oklch(0.45 0.03 250);
-  --copyright: oklch(0.45 0.03 250);
+  --color-button-primary: oklch(0.72 0.17 150);
+  --color-button-secondary: oklch(0.67 0.16 260);
 
-  --footer: oklch(0.23 0.04 260);
-  --footer-title: oklch(100% 0.00011 271.152);
-  --footer-paragraph: oklch(0.7137 0.0192 261.32);
+  --color-title: oklch(0.23 0.04 260);
+  --color-green-title: oklch(39.086% 0.09487 135.271);
+  --color-green-subtitle: oklch(54.064% 0.07728 152.752);
+  --color-paragraph: oklch(0.45 0.03 250);
+  --color-copyright: oklch(0.45 0.03 250);
+
+  --color-footer: oklch(0.23 0.04 260);
+  --color-footer-title: oklch(100% 0.00011 271.152);
+  --color-footer-paragraph: oklch(0.7137 0.0192 261.32);
 }
 
 @layer base {
   body {
     @apply bg-background text-paragraph;
+  }
+}
+
+@layer components {
+  .img-shadow {
+    box-shadow: 0px 4px 6px 0px oklch(0 0 0 / 10%);
+    box-shadow: 0px 10px 15px 0px oklch(0 0 0 / 10%);
   }
 }

@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="flex gap-2 text-footer-paragraph">
             <p>Kelas X - RPL</p>
             <p>|</p>
-            <p>Sie Teknologi</p>
+            <p>Sie Digital</p>
         </div>
 
         <div className="flex gap-4 mt-4">

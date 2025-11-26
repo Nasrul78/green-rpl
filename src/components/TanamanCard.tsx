@@ -1,7 +1,8 @@
-import type { ITanaman } from "@/types"
+import type { ITanamanCardProps } from "@/types"
 import { ArrowRight, Droplet } from "lucide-react"
+import { Link } from "react-router-dom";
 
-const TanamanCard = ({id, thumbnail, title, description, siram}: ITanaman) => {
+const TanamanCard = ({id, thumbnail, title, description, siram}: ITanamanCardProps) => {
   const words = siram.split(" ");
   const lastWord = words[words.length - 1];
   const shortenedLastWord = lastWord.slice(0, 1);
@@ -17,7 +18,7 @@ const TanamanCard = ({id, thumbnail, title, description, siram}: ITanaman) => {
         <div className="mt-3 flex justify-between items-center text-accent">
             <span className="gap-1 justify-between items-center flex bg-accent-primary-slight-blur sm:hidden px-3 py-1 rounded-full"><Droplet className="size-5.5"/>{trimmedSiram}</span>
             <span className="gap-1 justify-between items-center sm:flex bg-accent-primary-slight-blur hidden px-3 py-1 rounded-full"><Droplet className="size-5.5"/>{siram}</span>
-            <a className={`flex items-center gap-2" href="/tanaman/${id}`}>Selengkapnya<ArrowRight className="size-4.5"/></a>
+            <Link className={`flex items-center gap-2`} to={`/tanaman/${id}`}>Selengkapnya<ArrowRight className="size-4.5"/></Link>
         </div>
       </div>
     </article>

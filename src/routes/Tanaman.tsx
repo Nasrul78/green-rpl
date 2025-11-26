@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { InputGroup } from "@/components/ui/input-group"
 import TANAMAN from "@/constants/Tanaman"
+import type { ITanaman } from "@/types"
 import { ArrowLeft, Search } from "lucide-react"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
@@ -20,7 +21,7 @@ const Tanaman = () => {
   }, [search])
 
   return (
-    <div className="flex flex-col items-center p-12">
+    <main className="flex flex-col items-center p-12">
         <h1 className="font-bold text-5xl text-title  text-center">Tanaman Kami</h1>
         <p className="mt-4 text-center">Temukan informasi lengkap tentang tanaman dan fakta menarik dari tanaman pada taman kami</p>
         
@@ -45,7 +46,7 @@ const Tanaman = () => {
           {data.length === 0 ?
             <p className="text-center text-lg">Tanaman tidak ditemukan</p>
           :
-            data.map(({ id, thumbnail, title, description, siram}) => (
+            data.map(({ id, thumbnail, title, description, siram}: ITanaman) => (
               <TanamanCard key={id} id={id} thumbnail={thumbnail} title={title} description={description} siram={siram} />
           ))}
         </div>
@@ -53,7 +54,7 @@ const Tanaman = () => {
         <Link className="gap-2 flex items-center bg-white border-2 border-accent-primary h-16 mt-8 justify-center rounded-lg text-accent-primary w-full font-semibold text-lg" to="/">
           <ArrowLeft />Kembali ke Beranda
         </Link>
-    </div>
+    </main>
   )
 }
 
