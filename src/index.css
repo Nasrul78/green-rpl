@@ -6,11 +6,21 @@
 @theme inline {
   --color-background: var(--background);
   --color-navbar: var(--navbar);
+  --color-feature-card: var(--feature-card);
+  --color-feature-card-border: var(--accent-primary);
   --color-card: var(--card);
-  --color-card-border: var(--card-border);
   --color-border: var(--border);
-  --color-accent: var(--accent);
-  --color-accent-blur: var(--accent-blur);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-primary-slight-blur: var(--accent-primary-slight-blur);
+  --color-accent-primary-blur: var(--accent-primary-blur);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-secondary-blur: var(--accent-secondary-blur);
+  --color-accent-secondary-border: var(--accent-secondary-border);
+  --color-accent-tertiary: var(--accent-tertiary);
+  --color-accent-tertiary-blur: var(--accent-tertiary-blur);
+  --color-accent-tertiary-border: var(--accent-tertiary-border);
+  --color-hero: var(--hero);
+  --color-section-odd: var(--section-odd);
   --color-button-primary: var(--button-primary);
   --color-button-secondary: var(--button-secondary);
   --color-title: var(--title);
@@ -22,16 +32,25 @@
 }
 
 :root {
-  --background: oklch(0.985 0.005 250);
+  --background: oklch(98.444% 0.00463 258.639);
   --navbar: oklch(0.997 0.003 250);
-  --card: oklch(98.444% 0.00463 258.639);
-  --card-border: oklch(0.96 0.01 250);
+  --feature-card: oklch(98.193% 0.01802 156.147);
+  --card: oklch(100% 0.00011 271.152);
   --border: oklch(0.93 0.01 250);  
 
-  --accent: oklch(0.72 0.17 150);
-  --accent-blur: oklch(0.72 0.17 150 / 0.1);
+  --accent-primary: oklch(0.72 0.17 150);
+  --accent-primary-slight-blur:oklch(96.242% 0.04334 156.874);
+  --accent-primary-blur: oklch(98.193% 0.01802 156.147);
+  --accent-primary-border: oklch(96.242% 0.04334 156.874);
+  --accent-secondary: oklch(62.31% 0.1881 259.83);
+  --accent-secondary-blur: oklch(97.048% 0.01429 254.737);
+  --accent-secondary-border: oklch(93.192% 0.0317 255.644);
+  --accent-tertiary: oklch(76.858% 0.1646 70.075);
+  --accent-tertiary-blur: oklch(98.688% 0.02129 95.306);
+  --accent-tertiary-border: oklch(96.19% 0.05793 95.632);
 
-  --hero: oklch(84.522% 0.0001 271.152);
+  --hero: oklch(98.193% 0.01802 156.147);
+  --section-odd: oklch(98.463% 0.00181 249.248);
 
   --button-primary: oklch(0.72 0.17 150);
   --button-secondary: oklch(0.67 0.16 260);
