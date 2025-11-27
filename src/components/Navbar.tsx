@@ -27,14 +27,16 @@ const Navbar = () => {
               <Link to="/">Taman X - RPL</Link>
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem className="hover:bg-paragraph/20!">
-              <NavLink className="text-md my-1 w-full" to="/tanaman">Tanaman</NavLink>
+            <DropdownMenuItem className="p-0 hover:bg-paragraph/20!">
+              <NavLink className="text-md h-full p-2 w-full" to="/tanaman">
+                Tanaman
+              </NavLink>
             </DropdownMenuItem>
-            <DropdownMenuItem className="hover:bg-paragraph/20!">
-              <NavLink className="text-md my-1 w-full" to="/galeri">Galeri</NavLink>
+            <DropdownMenuItem className="p-0 hover:bg-paragraph/20!">
+              <NavLink className="text-md h-full p-2 w-full" to="/galeri">Galeri</NavLink>
             </DropdownMenuItem>
-            <DropdownMenuItem className="hover:bg-paragraph/20!">
-              <NavLink className="text-md my-1 w-full" to="/about">Tentang Kami</NavLink>
+            <DropdownMenuItem className="p-0 hover:bg-paragraph/20!">
+              <NavLink className="text-md h-full p-2 w-full" to="/about">Tentang Kami</NavLink>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

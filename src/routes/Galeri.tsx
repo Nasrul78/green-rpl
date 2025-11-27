@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 // import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 // import clsx from "clsx"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const images = import.meta.glob("/public/photos/*.{jpg,png,jpeg}", { eager: true })
 const imageList = Object.values(images).map((mod: any) => mod.default)
@@ -43,15 +44,20 @@ const Galeri = () => {
 
       <section className="p-12 pt-0">
         <div className="columns-2 md:columns-3 gap-4">
-          {imageList.slice(0, loadedPhotos).map((galeri, index) => (
-            <div key={index} className="mb-4 break-inside-avoid">
-              <img
-                src={galeri}
-                alt="Foto Galeri"
-                className="w-full object-cover rounded-2xl"
-              />
+          {imageList.slice(0, loadedPhotos).map((galeri, index) => {
+            const link = galeri.split("/").pop().split(".")[0]
+console.log(link)
+            return (
+            <div key={index} className="mb-4">
+              <Link to={`/photos/${link}`}>
+                <img
+                  src={galeri}
+                  alt="Foto Galeri"
+                  className="w-full object-cover rounded-2xl"
+                />
+              </Link>
             </div>
-          ))}
+          )})}
         </div>
 
         {loadedPhotos < imageList.length && <Button className="cursor-pointer flex mt-4 items-center border-2 border-accent-primary h-16 w-full justify-center rounded-lg  bg-white text-accent-primary font-semibold text-lg" onClick={() => {

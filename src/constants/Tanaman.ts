@@ -4,7 +4,7 @@ import type { ITanaman } from "@/types";
 const TANAMAN: ITanaman[] = [
   {
     id: 0,
-    thumbnail: "photos/nusa-indah0.jpeg",
+    thumbnail: "photos/nusaindah0.jpeg",
     title: "Bunga Nusa Indah",
     titleLatin: "Mussaenda philippica",
     description:
@@ -62,7 +62,7 @@ const TANAMAN: ITanaman[] = [
   },
   {
     id: 1,
-    thumbnail: "photos/bulu-ayam0.jpeg",
+    thumbnail: "photos/buluayam0.jpeg",
     title: "Bunga Bulu Ayam",
     titleLatin: "Chlorophytum comosum",
     description:
