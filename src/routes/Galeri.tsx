@@ -1,18 +1,11 @@
 import { Button } from "@/components/ui/button"
-// import { Label } from "@/components/ui/label"
-// import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-// import clsx from "clsx"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
 const images = import.meta.glob("/public/photos/*.{jpg,png,jpeg}", { eager: true })
 const imageList = Object.values(images).map((mod: any) => mod.default)
 
-// const videos = import.meta.glob("/public/videos/*.{}", { eager: true })
-// const videoList = Object.values(videos).map((mod: any) => mod.default)
-
 const Galeri = () => {
-  // const [activeChild, setActiveChild] = useState<number>(0)
   const [loadedPhotos, setLoadedPhotos] = useState<number>(6)
 
   return (
@@ -24,22 +17,6 @@ const Galeri = () => {
 
       <section className="py-6 px-12 flex justify-between">
         <h2 className="text-xl font-bold text-title">Dokumentasi Kami</h2>
-        {/* <RadioGroup className="flex p-2 bg-gray-400/40 rounded-full transition-all">
-          <div className={clsx(
-            "flex items-center rounded-full p-2 text-white",
-            activeChild === 0 ? "bg-accent-primary" : ""
-          )}>
-            <RadioGroupItem onClick={() => setActiveChild(0)} id="pict" value="picture" />
-            <Label htmlFor="pict">Picture</Label>
-          </div>
-          <div className={clsx(
-            "flex items-center rounded-full p-2 text-white",
-            activeChild === 1 ? "bg-accent-secondary" : ""
-          )}>
-            <RadioGroupItem onClick={() => setActiveChild(1)} id="vid" value="video" />
-            <Label htmlFor="vid">Video</Label>
-          </div>
-        </RadioGroup> */}
       </section>
 
       <section className="p-12 pt-0">
